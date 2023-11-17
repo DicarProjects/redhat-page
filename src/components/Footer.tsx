@@ -113,16 +113,16 @@ export const Footer = () => {
                     </div>
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
                         <i className="fa-brands fa-facebook-f text-white text-lg"></i>
-                        <p className="text-xs"><a href="https://www.facebook.com/Redhat" target="_blank" rel="noreferrer">Redhat</a></p>
+                        <p className="text-xs"><a href="https://www.facebook.com/redhat" target="_blank" rel="noreferrer">Redhat</a></p>
                     </div>
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-2 row-end-3 text-center">
                         <i className="fa-brands fa-whatsapp text-white text-lg"></i>
-                        <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573016079706" target="_blank" rel="noreferrer">Redhat</a></p>
+                        <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573000000000" target="_blank" rel="noreferrer">Redhat</a></p>
                     </div>
                     
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-3 row-end-4 text-center">
                         <i className="fa-brands fa-instagram text-white text-lg"></i>
-                        <p className="text-xs"><a href="https://www.instagram.com/Redhats.a.s/" target="_blank" rel="noreferrer">Redhat</a></p>
+                        <p className="text-xs"><a href="https://www.instagram.com/redhat/" target="_blank" rel="noreferrer">Redhat</a></p>
                     </div>
                 </div>
 
