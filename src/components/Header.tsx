@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Navbar } from './Navbar';
 import useScreenSize from '../hooks/useScreenSize';
 import bg from '../assets/img/bg.jpg';
-import girl from '../assets/img/png/techgirl.png';
 
 export const Header = () => {
 
