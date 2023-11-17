@@ -11,7 +11,7 @@ export const Services = () => {
     AOS.init();
 
     return (
-        <section className="bg-gray-200 py-20 my-20">
+        <section className="bg-gray-200 py-20">
 
             <div className="container mx-auto">
 

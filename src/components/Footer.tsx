@@ -78,8 +78,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-12 text-white">                    
                     <div className="flex flex-col col-start-1 col-end-4">
                         <div className="flex flex-grow items-center basis-0">
-                            <img className='w-10 mr-1' src={logoWhite} alt="Redhat Logo" loading="lazy"/>
-                            <p className="text-white lg:text-xl">Redhat</p>
+                            <img className='w-20' src={logoWhite} alt="Redhat Logo" loading="lazy"/>
                         </div>
                     </div>
                     <h2 className="font-bold  mb-3 md:mb-0 col-start-5 col-end-7 text-center self-center text-lg">{t('Sites')}</h2>
