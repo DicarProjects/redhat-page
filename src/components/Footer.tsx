@@ -35,17 +35,17 @@ export const Footer = () => {
                         <h2 className="font-bold text-sm col-span-12 text-center mb-3 md:mb-0">{t('Information')}</h2>
                         <div className="flex flex-col gap-1">
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-solid fa-phone text-red-400 col-start-4 col-end-5 text-lg"></i>
+                                <i className="fa-solid fa-phone text-white col-start-4 col-end-5 text-lg"></i>
                                 <p className="text-xs col-start-6 col-end-12">+57 3016079706</p>
                             </div>
 
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-solid fa-envelope text-red-400 col-start-4 col-end-5 text-lg"></i>
+                                <i className="fa-solid fa-envelope text-white col-start-4 col-end-5 text-lg"></i>
                                 <p className="text-xs col-start-6 col-end-12">gerencia@redhat.com.co</p>
                             </div> 
 
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-solid fa-location-dot text-red-400 col-start-4 col-end-5 text-lg"></i>
+                                <i className="fa-solid fa-location-dot text-white col-start-4 col-end-5 text-lg"></i>
                                 <p className="text-xs col-start-6 col-end-12 w-9/12">Calle 18 # 50 c 40 Neiva Huila</p>
                             </div>
                         </div>
@@ -55,17 +55,17 @@ export const Footer = () => {
                         <h2 className="font-bold text-sm col-span-12 text-center mb-3 md:mb-0">{t('Social')}</h2>
                         <div className="flex flex-col gap-3 md:gap-0">
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-brands fa-facebook-f text-red-400 col-start-4 col-end-5 text-lg"></i>
+                                <i className="fa-brands fa-facebook-f text-white col-start-4 col-end-5 text-lg"></i>
                                 <p className="text-xs col-start-6 col-end-12 w-9/12"><a href="https://www.facebook.com/Redhat" target="_blank" rel="noreferrer">Facebook Redhat</a></p>
                             </div>
 
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-brands fa-whatsapp text-red-400 col-start-4 col-end-5 text-lg"></i>
+                                <i className="fa-brands fa-whatsapp text-white col-start-4 col-end-5 text-lg"></i>
                                 <p className="text-xs col-start-6 col-end-12"><a href="https://api.whatsapp.com/send?phone=573016079706" target="_blank" rel="noreferrer">Whatsapp Redhat</a></p>
                             </div> 
 
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-brands fa-instagram text-red-400 col-start-4 col-end-5 text-lg"></i>
+                                <i className="fa-brands fa-instagram text-white col-start-4 col-end-5 text-lg"></i>
                                 <p className="text-xs col-start-6 col-end-12"><a href="https://www.instagram.com/Redhats.a.s/" target="_blank" rel="noreferrer">Instagram Redhat</a></p>
                             </div>
                         </div>
@@ -101,28 +101,28 @@ export const Footer = () => {
                     <Link className="text-center text-sm" to='/contact'>{t('Contact')}</Link>
                     </div>
                     <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-1 row-end-2 text-center">
-                        <i className="fa-solid fa-phone text-red-400 text-lg"></i>
+                        <i className="fa-solid fa-phone text-white text-lg"></i>
                         <p className="text-xs col-start-6 col-end-12">+57 300000000</p>
                     </div>
                     <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-center">
-                        <i className="fa-solid fa-envelope text-red-400 text-lg"></i>
+                        <i className="fa-solid fa-envelope text-white text-lg"></i>
                         <p className="text-xs col-start-6 col-end-12">gerencia@redhat.com.co</p>
                     </div> 
                     <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-center">
-                        <i className="fa-solid fa-location-dot text-red-400 text-lg"></i>
+                        <i className="fa-solid fa-location-dot text-white text-lg"></i>
                         <p className="text-xs col-start-6 col-end-12">Calle XX # XX Ibagué, Tolima</p>
                     </div>
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
-                        <i className="fa-brands fa-facebook-f text-red-400 text-lg"></i>
+                        <i className="fa-brands fa-facebook-f text-white text-lg"></i>
                         <p className="text-xs"><a href="https://www.facebook.com/Redhat" target="_blank" rel="noreferrer">Redhat</a></p>
                     </div>
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-2 row-end-3 text-center">
-                        <i className="fa-brands fa-whatsapp text-red-400 text-lg"></i>
+                        <i className="fa-brands fa-whatsapp text-white text-lg"></i>
                         <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573016079706" target="_blank" rel="noreferrer">Redhat</a></p>
                     </div>
                     
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-3 row-end-4 text-center">
-                        <i className="fa-brands fa-instagram text-red-400 text-lg"></i>
+                        <i className="fa-brands fa-instagram text-white text-lg"></i>
                         <p className="text-xs"><a href="https://www.instagram.com/Redhats.a.s/" target="_blank" rel="noreferrer">Redhat</a></p>
                     </div>
                 </div>
