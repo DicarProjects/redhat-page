@@ -30,7 +30,7 @@ export const Customers = () => {
             </div>
 
             <Swiper 
-                slidesPerView={width > 768 ? 5 : 2}
+                slidesPerView={width > 768 ? 5 : 1}
                 spaceBetween={30}
                 pagination={{
                 clickable: true,
