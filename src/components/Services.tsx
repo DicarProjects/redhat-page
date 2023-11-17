@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import about from '../assets/img/about1.png';

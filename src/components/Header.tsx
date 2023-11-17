@@ -8,7 +8,7 @@ export const Header = () => {
 
     const { width } = useScreenSize();
 
-    const [isVisibleModal, setIsVisibleModal] = useState();
+    const [isVisibleModal, setIsVisibleModal] = useState<boolean>();
 
     const { t } = useTranslation();
 
