@@ -105,7 +105,7 @@ export const Footer = () => {
                     </div>
                     <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-center">
                         <i className="fa-solid fa-envelope text-white text-lg"></i>
-                        <p className="text-xs col-start-6 col-end-12">gerencia@redhat.com.co</p>
+                        <a className="text-xs col-start-6 col-end-12" href="mailto:gerencia@redhat.com.co">gerencia@redhat.com.co</a>
                     </div> 
                     <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-center">
                         <i className="fa-solid fa-location-dot text-white text-lg"></i>
