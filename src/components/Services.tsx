@@ -38,7 +38,7 @@ export const Services = () => {
                         data-aos-duration="1000" 
                         className="bg-white rounded-lg mx-10 py-5 px-10 h-[500px] max-w-[350px] flex flex-col justify-evenly"
                     >
-                        <img src={about} />
+                        <img alt="Service Image" src={about} />
                         <h4 className="text-left font-bold">{t('Digital Marketing')}</h4>
                         <p className="text-sm">{t('Through advertising strategies we seek to promote your company digitally in such a way that you can analyze results in real time.')}</p>
                         <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#">
@@ -53,7 +53,7 @@ export const Services = () => {
                         data-aos-duration="1000" 
                         className="bg-white rounded-lg mx-10 py-5 px-10 h-[500px] max-w-[350px] flex flex-col justify-evenly"
                     >
-                        <img src={about} />
+                        <img alt="Service Image" src={about} />
                         <h4 className="text-left font-bold">{t('Digital Marketing')}</h4>
                         <p className="text-sm">{t('Through advertising strategies we seek to promote your company digitally in such a way that you can analyze results in real time.')}</p>
                         <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#">
@@ -68,7 +68,7 @@ export const Services = () => {
                         data-aos-duration="1000" 
                         className="bg-white rounded-lg mx-10 py-5 px-10 h-[500px] max-w-[350px] flex flex-col justify-evenly"
                     >
-                        <img src={about} />
+                        <img alt="Service Image" src={about} />
                         <h4 className="text-left font-bold">{t('Digital Marketing')}</h4>
                         <p className="text-sm">{t('Through advertising strategies we seek to promote your company digitally in such a way that you can analyze results in real time.')}</p>
                         <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#">

@@ -50,7 +50,7 @@ export const Footer = () => {
                             </div> 
                             <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-center">
                                 <i className="fa-solid fa-location-dot text-white text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12">Calle XX # XX Ibagué, Tolima</p>
+                                <p className="text-xs col-start-6 col-end-12">Calle 154 # 21 Sur Ibagué, Tolima</p>
                             </div>
                         </div>
                     </div>
