@@ -10,70 +10,10 @@ export const Footer = () => {
 
     return (
         <footer className="pt-5 relative z-30 bg-gray-600">
-            <div className="z-50 relative flex flex-col md:flex-row justify-center items-center text-white md:hidden">
-                <div className="container mx-auto max-w-[1200px] md:flex md:items-center md:justify-center">
-                    <div className="text-center">
-                        <div className="flex flex-grow items-center basis-0 justify-center">
-                            <img className='w-56 mr-1' src={logo} alt="Redhat Logo" loading="lazy"/>
-                        </div>
-                    </div>
 
-                    <div className="text-center">
-                        <nav className="my-10 md:my-0 flex flex-col gap-2 justify-center">
-                            <h2 className="font-bold text-sm mb-3 md:mb-0">{t('Menu')}</h2>
-                            <ul className="text-xs flex flex-col gap-5 ">
-                                <li><a href="#about">{t('About us')}</a></li>
-                                <li><Link to='/services'>{t('Services')}</Link></li>
-                                <li><Link to='/contact'>{t('Contact')}</Link></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div className="flex flex-col gap-1 my-10 md:my-0">
-                        <h2 className="font-bold text-sm col-span-12 text-center mb-3 md:mb-0">{t('Contact')}</h2>
-                        <div className="flex flex-col gap-1">
-                            <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-solid fa-phone text-white col-start-4 col-end-5 text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12">+57 3016079706</p>
-                            </div>
-
-                            <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-solid fa-envelope text-white col-start-4 col-end-5 text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12">gerencia@redhat.com.co</p>
-                            </div> 
-
-                            <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-solid fa-location-dot text-white col-start-4 col-end-5 text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12 w-9/12">Calle 18 # 50 c 40 Neiva Huila</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                        <h2 className="font-bold text-sm col-span-12 text-center mb-3 md:mb-0">{t('Social')}</h2>
-                        <div className="flex flex-col gap-3 md:gap-0">
-                            <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-brands fa-facebook-f text-white col-start-4 col-end-5 text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12 w-9/12"><a href="https://www.facebook.com/Redhat" target="_blank" rel="noreferrer">Facebook Redhat</a></p>
-                            </div>
-
-                            <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-brands fa-whatsapp text-white col-start-4 col-end-5 text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12"><a href="https://api.whatsapp.com/send?phone=573016079706" target="_blank" rel="noreferrer">Whatsapp Redhat</a></p>
-                            </div> 
-
-                            <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
-                                <i className="fa-brands fa-instagram text-white col-start-4 col-end-5 text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12"><a href="https://www.instagram.com/Redhats.a.s/" target="_blank" rel="noreferrer">Instagram Redhat</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="hidden md:flex flex-col container mx-auto xl:max-w-[1200px] z-50 relative py-10">
+            <div className="flex flex-col container mx-auto xl:max-w-[1200px] z-50 relative py-10">
                 
-                <div className="flex justify-between gap-5 text-white">                    
+                <div className="flex flex-col md:flex-row items-center justify-between gap-5 text-white">                    
                     <div className="flex flex-col col-start-1 col-end-4">
                         <div className="flex flex-grow items-center basis-0">
                             <img className='w-56' src={logo} alt="Redhat Logo" loading="lazy"/>
@@ -119,7 +59,7 @@ export const Footer = () => {
 
             </div>
 
-            <div className="z-50 relative text-center text-lg p-5 flex justify-around items-center gap-2">
+            <div className="z-50 relative text-center text-lg p-5 flex flex-col md:flex-row justify-around items-center gap-2">
                 <p className="text-white text-sm">&copy; Redhat {date}. {t('All rights reserved')}</p>
                 <div className="flex gap-3">
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
