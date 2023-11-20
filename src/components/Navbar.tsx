@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import logoWhite from '../assets/img/logo-white.png';
+import logo from '../assets/img/logo.png';
 import useScreenSize from '../hooks/useScreenSize';
 
 export const Navbar = () => {
@@ -35,7 +35,7 @@ export const Navbar = () => {
             { width > 768 ? (
                 <>
                     <Link to="/" className="flex flex-grow items-center basis-0 container mx-auto justify-center md:justify-start cursor-pointer">
-                      <img className="w-20 mr-5" src={logoWhite} alt="Redhat logo" loading="lazy" />
+                      <img className="w-32 mr-5" src={logo} alt="Redhat logo" loading="lazy" />
                     </Link>
 
                     <nav className="hidden md:block">
@@ -85,7 +85,7 @@ export const Navbar = () => {
 
             ) : (
                 <div className="flex flex-grow items-center basis-0 container mx-auto justify-center md:justify-start cursor-pointer" onClick={() => setIsActiveMenu(!isActiveMenu)}>
-                  <img className="w-20 mr-5" src={logoWhite} alt="Redhat Logo" loading="lazy" />
+                  <img className="w-20 mr-5" src={logo} alt="Redhat Logo" loading="lazy" />
                 </div>
             )} 
 

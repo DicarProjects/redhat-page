@@ -22,18 +22,16 @@ export const Customers = () => {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="700" 
-                className="bg-red-500 rounded-lg w-6/12 mx-auto lg:w-2/12 mb-10"
+                className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2 mb-10"
             >
-                <p
-                    className="text-white p-2 text-sm font-bold text-center md:text-lg"
-                >{t('Customers')}</p>
+                <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Customers')}</p>
             </div>
 
             <Swiper 
                 slidesPerView={width > 768 ? 5 : 1}
                 spaceBetween={30}
                 pagination={{
-                clickable: true,
+                    clickable: true,
                 }}
                 modules={[Pagination]}
                 className="mySwiper"

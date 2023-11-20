@@ -18,16 +18,16 @@ export const Services = () => {
                     data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="700" 
-                    className="bg-red-500 rounded-lg w-6/12 mx-auto md:w-2/12"
+                    className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2"
                 >
-                    <p className="text-white p-2 text-sm font-bold text-center md:text-lg">{t('Services')}</p>
+                    <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Check out services')}</p>
                 </div>
 
                 <p 
                     data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="800" 
-                    className="text-center my-10 font-bold text-lg md:text-3xl w-7/12 mx-auto"
+                    className="text-center text-gray-900 my-10 md:text-lg w-7/12 mx-auto"
                 >{t('Agile development of digital solutions')}</p>
             
                 <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-0">
@@ -41,7 +41,7 @@ export const Services = () => {
                         <img src={about} />
                         <h4 className="text-left font-bold">{t('Digital Marketing')}</h4>
                         <p className="text-sm">{t('Through advertising strategies we seek to promote your company digitally in such a way that you can analyze results in real time.')}</p>
-                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#about">
+                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#">
                             {t('Read more')}
                             <i className="fa-solid fa-arrow-right ml-2"></i>
                         </a>
@@ -56,7 +56,7 @@ export const Services = () => {
                         <img src={about} />
                         <h4 className="text-left font-bold">{t('Digital Marketing')}</h4>
                         <p className="text-sm">{t('Through advertising strategies we seek to promote your company digitally in such a way that you can analyze results in real time.')}</p>
-                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#about">
+                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#">
                             {t('Read more')}
                             <i className="fa-solid fa-arrow-right ml-2"></i>
                         </a>
@@ -71,7 +71,7 @@ export const Services = () => {
                         <img src={about} />
                         <h4 className="text-left font-bold">{t('Digital Marketing')}</h4>
                         <p className="text-sm">{t('Through advertising strategies we seek to promote your company digitally in such a way that you can analyze results in real time.')}</p>
-                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#about">
+                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 w-6/12 mx-auto md:mx-0 lg:w-12/12" href="#">
                             {t('Read more')}
                             <i className="fa-solid fa-arrow-right ml-2"></i>
                         </a>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import logoWhite from '../assets/img/logo-white.png';
+import logo from '../assets/img/logo.png';
 
 export const Footer = () => {
 
@@ -14,15 +14,13 @@ export const Footer = () => {
                 <div className="container mx-auto max-w-[1200px] md:flex md:items-center md:justify-center">
                     <div className="text-center">
                         <div className="flex flex-grow items-center basis-0 justify-center">
-                            <img className='w-10 mr-1' src={logoWhite} alt="Redhat Logo" loading="lazy"/>
-                            <p className="text-white lg:text-lg">Redhat</p>
+                            <img className='w-56 mr-1' src={logo} alt="Redhat Logo" loading="lazy"/>
                         </div>
-                        <p className="w-10/12 mx-auto text-xs mt-3 leading-4">{t('With Redhat, harness the power of technology to drive your business success.')}</p>
                     </div>
 
                     <div className="text-center">
                         <nav className="my-10 md:my-0 flex flex-col gap-2 justify-center">
-                            <h2 className="font-bold text-sm mb-3 md:mb-0">{t('Sites')}</h2>
+                            <h2 className="font-bold text-sm mb-3 md:mb-0">{t('Menu')}</h2>
                             <ul className="text-xs flex flex-col gap-5 ">
                                 <li><a href="#about">{t('About us')}</a></li>
                                 <li><Link to='/services'>{t('Services')}</Link></li>
@@ -32,7 +30,7 @@ export const Footer = () => {
                     </div>
 
                     <div className="flex flex-col gap-1 my-10 md:my-0">
-                        <h2 className="font-bold text-sm col-span-12 text-center mb-3 md:mb-0">{t('Information')}</h2>
+                        <h2 className="font-bold text-sm col-span-12 text-center mb-3 md:mb-0">{t('Contact')}</h2>
                         <div className="flex flex-col gap-1">
                             <div className="grid grid-cols-12 gap-2 justify items-center justify-center">
                                 <i className="fa-solid fa-phone text-white col-start-4 col-end-5 text-lg"></i>
@@ -73,63 +71,68 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div className="hidden md:block container mx-auto xl:max-w-[1200px] z-50 relative py-10">
+            <div className="hidden md:flex flex-col container mx-auto xl:max-w-[1200px] z-50 relative py-10">
                 
-                <div className="grid grid-cols-12 text-white">                    
+                <div className="flex justify-between gap-5 text-white">                    
                     <div className="flex flex-col col-start-1 col-end-4">
                         <div className="flex flex-grow items-center basis-0">
-                            <img className='w-20' src={logoWhite} alt="Redhat Logo" loading="lazy"/>
+                            <img className='w-56' src={logo} alt="Redhat Logo" loading="lazy"/>
                         </div>
                     </div>
-                    <h2 className="font-bold  mb-3 md:mb-0 col-start-5 col-end-7 text-center self-center text-lg">{t('Sites')}</h2>
-                    <h2 className="font-bold  mb-3 md:mb-0 col-start-8 col-end-10 text-center self-center text-lg">{t('Information')}</h2>
-                    <h2 className="font-bold  mb-3 md:mb-0 col-start-11 col-end-13 text-center self-center text-lg">{t('Social')}</h2>
-                </div>
 
-                <div className="grid grid-cols-12 grid-rows-3 text-white">                    
-                    <div className="col-start-1 col-end-4 row-start-2 row-end-3">
-                        <p className="text-sm leading-4">{t('With Redhat, harness the power of technology to drive your business success.')}</p>
+                    <div className="text-white">
+                        <h2 className="font-bold mb-5 col-start-5 col-end-7 text-center self-center text-lg">{t('Menu')}</h2>
+
+                        <div>                    
+                            <div className="col-start-5 col-end-7 flex items-center justify-center">
+                                <a className="text-center text-sm pb-2" href="#about">{t('About us')}</a>
+                            </div>
+                            <div className="col-start-5 col-end-7 flex items-center justify-center">
+                                <Link className="text-center text-sm pb-2" to='/services'>{t('Services')}</Link>
+                            </div>
+                            <div className="col-start-5 col-end-7 flex items-center justify-center">
+                                <Link className="text-center text-sm pb-2" to='/contact'>{t('Contact')}</Link>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-start-5 col-end-7 flex items-center justify-center">
-                         <a className="text-center text-sm" href="#about">{t('About us')}</a>
+
+                    <div>
+                        <h2 className="font-bold mb-5 col-start-8 col-end-10 text-center self-center text-lg">{t('Contact')}</h2>  
+
+                        <div className="text-white">
+                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-1 row-end-2 text-center">
+                                <i className="fa-solid fa-phone text-white text-lg"></i>
+                                <p className="text-xs col-start-6 col-end-12">+57 300000000</p>
+                            </div>
+                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-center">
+                                <i className="fa-solid fa-envelope text-white text-lg"></i>
+                                <a className="text-xs col-start-6 col-end-12" href="mailto:gerencia@redhat.com.co">gerencia@redhat.com.co</a>
+                            </div> 
+                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-center">
+                                <i className="fa-solid fa-location-dot text-white text-lg"></i>
+                                <p className="text-xs col-start-6 col-end-12">Calle XX # XX Ibagué, Tolima</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-start-5 col-end-7 flex items-center justify-center">
-                        <Link className="text-center text-sm" to='/services'>{t('Services')}</Link>
-                    </div>
-                    <div className="col-start-5 col-end-7 flex items-center justify-center">
-                    <Link className="text-center text-sm" to='/contact'>{t('Contact')}</Link>
-                    </div>
-                    <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-1 row-end-2 text-center">
-                        <i className="fa-solid fa-phone text-white text-lg"></i>
-                        <p className="text-xs col-start-6 col-end-12">+57 300000000</p>
-                    </div>
-                    <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-center">
-                        <i className="fa-solid fa-envelope text-white text-lg"></i>
-                        <a className="text-xs col-start-6 col-end-12" href="mailto:gerencia@redhat.com.co">gerencia@redhat.com.co</a>
-                    </div> 
-                    <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-center">
-                        <i className="fa-solid fa-location-dot text-white text-lg"></i>
-                        <p className="text-xs col-start-6 col-end-12">Calle XX # XX Ibagué, Tolima</p>
-                    </div>
-                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
-                        <i className="fa-brands fa-facebook-f text-white text-lg"></i>
-                        <p className="text-xs"><a href="https://www.facebook.com/redhat" target="_blank" rel="noreferrer">Redhat</a></p>
-                    </div>
-                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-2 row-end-3 text-center">
-                        <i className="fa-brands fa-whatsapp text-white text-lg"></i>
-                        <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573000000000" target="_blank" rel="noreferrer">Redhat</a></p>
-                    </div>
-                    
-                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-3 row-end-4 text-center">
-                        <i className="fa-brands fa-instagram text-white text-lg"></i>
-                        <p className="text-xs"><a href="https://www.instagram.com/redhat/" target="_blank" rel="noreferrer">Redhat</a></p>
-                    </div>
+
                 </div>
 
             </div>
 
-            <div className="z-50 relative text-center text-lg p-5">
+            <div className="z-50 relative text-center text-lg p-5 flex justify-around items-center gap-2">
                 <p className="text-white text-sm">&copy; Redhat {date}. {t('All rights reserved')}</p>
+                <div className="flex gap-3">
+                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
+                        <p className="text-xs"><a href="https://www.facebook.com/redhat" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook-f text-white text-lg"></i></a></p>
+                    </div>
+                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-2 row-end-3 text-center">
+                        <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573000000000" target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp text-white text-lg"></i></a></p>
+                    </div>
+                    
+                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-3 row-end-4 text-center">
+                        <p className="text-xs"><a href="https://www.instagram.com/redhat/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram text-white text-lg"></i></a></p>
+                    </div>
+                </div>
             </div>
 
 

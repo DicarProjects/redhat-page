@@ -30,9 +30,9 @@ export const Header = () => {
             <div className="z-40 relative flex flex-col container mx-auto md:pt-5">
                 <div className="flex flex-col md:flex-row justify-evenly">
                     <div className='flex flex-col md:pt-5 px-5 gap-7 lg:w-8/12 md:m-7 lg:m-0 animate__animated animate__fadeInRight'>                            
-                        <h2 className="text-white text-2xl lg:text-[45px] font-bold md:leading-[3rem] text-center md:text-center md:pt-12 lg:pt-6">{t('Agile development.')}</h2>
-                        <p className="text-white text-sm md:text-lg text-center md:text-center md:w-[400px] lg:w-[650px] xl:w-[1000px]">{t('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum lobortis volutpat. Pellentesque vitae tortor vel nunc posuere ultricies a ac arcu. In gravida nunc vel ullamcorper auctor.')}</p>
-                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-3 w-6/12 mx-auto md:mx-0 lg:w-3/12 lg:block lg:mx-auto md:mt-8" href="#about">
+                        <h2 className="text-white text-2xl lg:text-[40px] font-bold md:leading-[3rem] text-center md:text-center md:pt-12 lg:pt-6">{t('Experts in Digital Development and Transformation through Innovative Technologies.')}</h2>
+                        <p className="text-white text-sm md:text-lg text-center md:text-center">{t('Welcome to Red Hat It Solutions, leaders in software development and digital transformation. Our innovative agility drives tangible results. Join us to strategically and effectively shape the digital future.')}</p>
+                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-3 w-6/12 mx-auto block md:mt-8 md:w-3/12" href="#about">
                             {t('Get information')}
                             <i className="fa-solid fa-arrow-right ml-2"></i>
                         </a>
