@@ -1,5 +1,11 @@
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+
 export const ContactPage = () => {
   return (
-    <div>ContactPage</div>
+    <>
+      <Header title="Contact us" heightBanner="400"/>
+      <Footer/>
+    </>
   )
 }

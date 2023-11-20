@@ -1,5 +1,11 @@
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header"
+
 export const ServicesPage = () => {
   return (
-    <div>ServicesPage</div>
+    <>
+      <Header title="Services" heightBanner="400"/>
+      <Footer/>
+    </>
   )
 }

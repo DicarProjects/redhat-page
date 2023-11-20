@@ -16,7 +16,7 @@ export const Customers = () => {
     AOS.init();
 
     return (
-        <section className="my-20">
+        <section id="customers" className="my-20">
 
             <div 
                 data-aos="fade-down"

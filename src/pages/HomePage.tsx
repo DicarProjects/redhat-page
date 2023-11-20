@@ -9,7 +9,7 @@ import { Services } from "../components/Services";
 export const HomePage = () => {
   return (
     <>    
-      <Header/>
+      <Header title={'Experts in Digital Development and Transformation through Innovative Technologies.'} subtitle={'Welcome to Red Hat It Solutions, leaders in software development and digital transformation. Our innovative agility drives tangible results. Join us to strategically and effectively shape the digital future.'} heightBanner="600"/>
       <AboutUs/>
       <Services/>
       <Capabilities/>
