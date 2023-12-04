@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import clienteAxios from "../api/axios";
+import axiosClient from "../api/axios";
 import { useForm } from "../hooks/useForm";
 import Swal from 'sweetalert2';
 import 'sweetalert2/src/sweetalert2.scss'
@@ -28,24 +28,25 @@ export const Form = () => {
     const login = async (e) => {
       e.preventDefault();
 
-      console.log(formValues)
-
       if (!hasProperty(formValues)) {
-        const response = await clienteAxios.post('/api/form/create-new-from', formValues);
-  
-        if (response.status === 200) {
-          Swal.fire({
-            title: "Good job!",
-            text: "You message was sent!",
-            icon: "success"
-          });
-        } else {
+        try {
+          const response = await axiosClient.post('api/form/create-new-form', formValues);
+          if (response.status === 200) {
+            Swal.fire({
+              title: "Good job!",
+              text: "You message was sent!",
+              icon: "success"
+            });
+          } 
+        } catch (error) {
+          console.log('error', error);
           Swal.fire({
             icon: "error",
             title: "Oops...",
             text: "Try again"
           });
         }
+  
       } else {
         Swal.fire({
           title: 'Error!',
