@@ -42,7 +42,8 @@ export const Navbar = () => {
                       <ul className={`flex flex-col md:flex-row text-sm [&>li>a]:text-white [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 font-bold lg:text-lg`}>
                         <li><Link to='/aboutus'>{t('About us')}</Link></li>
                         <li><Link to='/services'>{t('Services')}</Link></li>
-                        {isHome ? <li><a href="#customers">{t('Customers')}</a></li> :  <li><Link to='/'>{t('Customers')}</Link></li>}
+                        <li><Link to='/capabilities'>{t('Capabilities')}</Link></li>
+                        {/* {isHome ? <li><a href="#customers">{t('Customers')}</a></li> :  <li><Link to='/'>{t('Customers')}</Link></li>} */}
                         <li><Link to='/contact'>{t('Contact us')}</Link></li>
                       </ul>
                     </nav>
@@ -68,12 +69,12 @@ export const Navbar = () => {
                                           </button>
                                         </li>
                                         <li>
-                                          <button
+                                            <button
                                               onClick={() => handleLanguageSelect('es')}
                                               className="block w-full px-4 py-2 text-gray-500 hover:bg-gray-200"
-                                          >
+                                            >
                                               Spanish
-                                          </button>
+                                            </button>
                                         </li>
                                     </ul>
                                 </div>
@@ -99,7 +100,8 @@ export const Navbar = () => {
                 <div className="pt-10 flex flex-col text-left">
                     {isHome ? <a className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100" href="#about">{t('About us')}</a> : <Link to="/" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100">{t('About us')}</Link>}
                     <Link to="/services" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100">{t('Services')}</Link>
-                    {isHome ? <a className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100" href="#customers">{t('Customers')}</a> : <Link to="/" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100">{t('Customers')}</Link>}
+                    <Link to="/capabilities" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100">{t('Capabilities')}</Link>
+                    {/* {isHome ? <a className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100" href="#customers">{t('Customers')}</a> : <Link to="/" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100">{t('Customers')}</Link>} */}
                     <Link to="/contactus" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 border-y-2 border-gray-100">{t('Contact us')}</Link>
                     <div className="text-gray-500 hover:text-gray-600 cursor-pointer flex  gap-3 mx-auto w-full p-3 border-y-2 border-gray-100" onClick={() => handleLanguageSelect(i18n.language === 'en' ? 'es' : 'en' )}>
                         <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">

@@ -7,7 +7,7 @@ import { Values } from "../components/Values";
 export const AboutUsPage = () => {
   return (
     <>
-      <Header title="About us" heightBanner="400"/>
+      <Header title="About us" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum purus eros, vel consectetur mauris rutrum a. Quisque vitae arcu ut diam lobortis volutpat. Vivamus dapibus eget metus a dapibus" heightBanner="400"/>
       <Objectives/>
       <Values/>
       <Team/>

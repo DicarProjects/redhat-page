@@ -27,7 +27,7 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
     }
     
     return (
-        <header className={`bg-black h-[400px] md:h-[${heightBanner}px] text-center relative z-30`}>
+        <header className={`bg-black h-[400px] md:h-[580px] text-center relative z-30`}>
 
             <div className={`z-50 relative flex flex-col md:flex-row justify-center items-center align container mx-auto py-5 md:max-w-[700px] xl:max-w-[1200px] ${textColor}`} onClick={onClickMenu}>
                 <Navbar/>
@@ -36,7 +36,7 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
             <div className="z-40 relative flex flex-col container mx-auto md:pt-5">
                 <div className="flex flex-col md:flex-row justify-evenly">
                     <div className='flex flex-col md:pt-5 px-5 gap-7 lg:w-8/12 md:m-7 lg:m-0 animate__animated animate__fadeInRight'>                            
-                        <h2 className="text-white text-2xl lg:text-[40px] font-bold md:leading-[3rem] text-center md:text-center md:pt-12 lg:pt-6">{t(`${title}`)}</h2>
+                        <h2 className="text-white text-2xl lg:text-[40px] font-bold md:leading-[3rem] text-center md:text-center md:pt-12 lg:pt-6 capitalize">{t(`${title}`)}</h2>
                         {subtitle && (
                             <p className="text-white text-sm md:text-lg text-center md:text-center">{t(`${subtitle}`)}</p>
                         )}

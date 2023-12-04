@@ -21,36 +21,39 @@ export const Footer = () => {
                     </div>
 
                     <div className="text-white">
-                        <h2 className="font-bold mb-5 col-start-5 col-end-7 text-center self-center text-lg">{t('Menu')}</h2>
+                        <h2 className="font-bold mb-5 col-start-5 col-end-7 text-lg">{t('Menu')}</h2>
 
                         <div>                    
-                            <div className="col-start-5 col-end-7 flex items-center justify-center">
+                            <div className="col-start-5 col-end-7 flex items-center">
                                 <a className="text-center text-sm pb-2" href="#about">{t('About us')}</a>
                             </div>
-                            <div className="col-start-5 col-end-7 flex items-center justify-center">
+                            <div className="col-start-5 col-end-7 flex items-center">
                                 <Link className="text-center text-sm pb-2" to='/services'>{t('Services')}</Link>
                             </div>
-                            <div className="col-start-5 col-end-7 flex items-center justify-center">
+                            <div className="col-start-5 col-end-7 flex items-center">
+                                <Link className="text-center text-sm pb-2" to='/capabilities'>{t('Capabilities')}</Link>
+                            </div>
+                            <div className="col-start-5 col-end-7 flex items-center">
                                 <Link className="text-center text-sm pb-2" to='/contact'>{t('Contact')}</Link>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <h2 className="font-bold mb-5 col-start-8 col-end-10 text-center self-center text-lg">{t('Contact')}</h2>  
+                        <h2 className="font-bold mb-5 col-start-8 col-end-10  text-lg">{t('Contact')}</h2>  
 
                         <div className="text-white">
-                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-1 row-end-2 text-center">
+                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-1 row-end-2 text-left">
                                 <i className="fa-solid fa-phone text-white text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12">+57 300000000</p>
+                                <p className="text-xs col-start-6 col-end-12 w-full">+57 3122538120</p>
                             </div>
-                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-center">
+                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-left">
                                 <i className="fa-solid fa-envelope text-white text-lg"></i>
-                                <a className="text-xs col-start-6 col-end-12" href="mailto:gerencia@redhat.com.co">gerencia@redhat.com.co</a>
+                                <a className="text-xs col-start-6 col-end-12 w-full" href="mailto:contact@redhatitsolutions.com">contact@redhatitsolutions.com</a>
                             </div> 
-                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-center">
+                            <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-left">
                                 <i className="fa-solid fa-location-dot text-white text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12">Calle 154 # 21 Sur Ibagué, Tolima</p>
+                                <p className="text-xs col-start-6 col-end-12 w-full">Calle 154 # 21 Sur Ibagué, Tolima</p>
                             </div>
                         </div>
                     </div>
@@ -61,7 +64,7 @@ export const Footer = () => {
 
             <div className="z-50 relative text-center text-lg p-5 flex flex-col md:flex-row justify-around items-center gap-2">
                 <p className="text-white text-sm">&copy; Redhat {date}. {t('All rights reserved')}</p>
-                <div className="flex gap-3">
+                <div className="flex gap-7">
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
                         <p className="text-xs"><a href="https://www.facebook.com/redhat" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook-f text-white text-lg"></i></a></p>
                     </div>
