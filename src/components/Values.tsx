@@ -13,7 +13,7 @@ export const Values = () => {
 
         <section className="bg-gray-200 py-20">
 
-            <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-20 md:my-32">
+            <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-20">
                 <div 
                     data-aos="fade-down"
                     data-aos-easing="linear"
