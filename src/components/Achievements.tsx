@@ -24,7 +24,7 @@ export const Achievements = () => {
                 </div>
                 <div>
                     <p className="font-bold text-2xl">4 {t('countries')}</p>
-                    <p className="capitalize">{t('for software development')}</p>
+                    <p className="capitalize">{t('active operations')}</p>
                 </div>
             </div>
 

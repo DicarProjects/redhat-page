@@ -69,7 +69,7 @@ export const Footer = () => {
                         <p className="text-xs"><a href="https://www.facebook.com/redhat" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook-f text-white text-lg"></i></a></p>
                     </div>
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-2 row-end-3 text-center">
-                        <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573000000000" target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp text-white text-lg"></i></a></p>
+                        <p className="text-xs"><a href="https://api.whatsapp.com/send?phone=573122538120" target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp text-white text-lg"></i></a></p>
                     </div>
                     
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-3 row-end-4 text-center">

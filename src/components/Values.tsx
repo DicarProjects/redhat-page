@@ -11,9 +11,9 @@ export const Values = () => {
 
     return (
 
-        <section className="bg-gray-200 py-10">
+        <section className="bg-gray-200 py-20">
 
-            <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-10 md:my-5">
+            <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-20 md:my-32">
                 <div 
                     data-aos="fade-down"
                     data-aos-easing="linear"
@@ -23,17 +23,41 @@ export const Values = () => {
                     <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Our values')}</p>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center  gap-10">
-                    <ValueItem iconTitle="Customer first" iconPara="Lorem ipsum dolor sit amet consectetur. Arcu dui vitae non fermentum">
-                        <i className="fa-regular fa-user"></i>
+                <div className="flex flex-col md:flex-row items-center gap-10">
+                    <ValueItem 
+                        iconTitle={t('Innovation')} 
+                        iconPara={t('Involves the ability to think creatively and generate unique solutions for existing challenges.')}
+                    >
+                        <i className="fa-solid fa-gear"></i>
                     </ValueItem>
-                    <ValueItem iconTitle="Urgency and focus" iconPara="Lorem ipsum dolor sit amet consectetur. Arcu dui vitae non fermentum">
-                        <i className="fa-regular fa-clock"></i>
+                    <ValueItem 
+                        iconTitle={t('Integrity and ethics')} 
+                        iconPara={t('Valuing continuous improvement involves seeking more efficient and effective ways of doing things.')}
+                    >
+                        <i className="fa-solid fa-hand"></i>
                     </ValueItem>
-                    <ValueItem iconTitle="Great design is not a luxury" iconPara="Lorem ipsum dolor sit amet consectetur. Arcu dui vitae non fermentum">
-                        <i className="fa-regular fa-image"></i>
+                    <ValueItem 
+                        iconTitle={t('Diversity and inclusion')} 
+                        iconPara={t('Promoting a diverse and inclusive work environment, recognizing the importance of respect for creativity and long-term success.')}
+                    >
+                        <i className="fa-solid fa-person"></i>
                     </ValueItem>
-                    <ValueItem iconTitle="Team work" iconPara="Lorem ipsum dolor sit amet consectetur. Arcu dui vitae non fermentum">
+                    <ValueItem 
+                        iconTitle={t('Flexibility and adaptability')} 
+                        iconPara={t('The ability to quickly adapt to changes in the business environment. Flexibility and organizational agility are increasingly important.')}
+                    >
+                        <i className="fa-solid fa-arrows-left-right-to-line"></i>
+                    </ValueItem>
+                    <ValueItem 
+                        iconTitle={t('Customer orientation')} 
+                        iconPara={t('Placing the customer at the center of decisions and actions, key to long-term success.')}
+                    >
+                        <i className="fa-solid fa-user-group"></i>
+                    </ValueItem>
+                    <ValueItem 
+                        iconTitle={t('Colaboration and teamwork')} 
+                        iconPara={t('Fostering open and effective communication. Valuing collaboration involves expressing ideas clearly, actively listening, and sharing information to keep the team informed.')}
+                    >
                         <i className="fa-solid fa-people-group"></i>
                     </ValueItem>
                 </div>
