@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { MemberCard } from './MemberCard';
+import JuanDavidImage from '../assets/img/TeamMembers/JuanDavid.jpg'; // Reemplaza con la ruta correcta
+import LeidyKatherinImage from '../assets/img/TeamMembers/LeidyKatherine.png'; // Reemplaza con la ruta correcta
 
 export const Team = () => {
 
@@ -22,15 +24,15 @@ export const Team = () => {
       </div>
 
       <div className="flex flex-col md:grid md:grid-cols-3 gap-5 justify-center items-center">
-        <MemberCard name='Wilmar Giovanny Alfaro' position='CEO'/>
-        <MemberCard name='Keidy Lorena Moreno' position='CTO'/>
-        <MemberCard name='Leidy Katherine Alvarado' position='CFO'/>
-        <MemberCard name='Sebastián Camilo Oviedo' position='FullStack Developer'/>
-        <MemberCard name='Diego Alejandro Cardona' position='Backend Developer'/>
-        <MemberCard name='Jhon Alexis Alfaro Puerta' position='Backend Developer'/>
-        <MemberCard name='Juan David Yara Cruz' position='Backend Developer'/>
-        <MemberCard name='Juan Manuel García' position='Frontend Developer'/>
-        <MemberCard name='Harol Guzmán Cartagena' position='Backend Developer'/>
+        <MemberCard name='Wilmar Giovanny Alfaro' position='CEO' imageSrc={JuanDavidImage}/>
+        <MemberCard name='Keidy Lorena Moreno' position='CTO' imageSrc={JuanDavidImage}/>
+        <MemberCard name='Leidy Katherine Alvarado' position='CFO' imageSrc={LeidyKatherinImage}/>
+        <MemberCard name='Sebastián Camilo Oviedo' position='FullStack Developer' imageSrc={JuanDavidImage}/>
+        <MemberCard name='Diego Alejandro Cardona' position='Backend Developer' imageSrc={JuanDavidImage}/>
+        <MemberCard name='Jhon Alexis Alfaro Puerta' position='Backend Developer' imageSrc={JuanDavidImage}/>
+        <MemberCard name='Juan David Yara Cruz' position='Backend Developer' imageSrc={JuanDavidImage}/>
+        <MemberCard name='Juan Manuel García' position='Frontend Developer'imageSrc={JuanDavidImage}/>
+        <MemberCard name='Harol Guzmán Cartagena' position='Backend Developer' imageSrc={JuanDavidImage}/>
       </div>
     </section>
   )
