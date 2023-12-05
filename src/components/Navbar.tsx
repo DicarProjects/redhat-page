@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/Logo-BlackAndRed-Principal.png';
 import useScreenSize from '../hooks/useScreenSize';
 
 export const Navbar = () => {

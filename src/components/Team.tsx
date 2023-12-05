@@ -21,10 +21,11 @@ export const Team = () => {
           <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Our team')}</p>
       </div>
 
-      <div className="flex flex-col md:grid md:grid-cols-4 gap-5 justify-center items-center">
+      <div className="flex flex-col md:grid md:grid-cols-3 gap-5 justify-center items-center">
         <MemberCard name='Wilmar Giovanny Alfaro' position='CEO'/>
         <MemberCard name='Keidy Lorena Moreno' position='CTO'/>
         <MemberCard name='Leidy Katherine Alvarado' position='CFO'/>
+        <MemberCard name='Sebastián Camilo Oviedo' position='FullStack Developer'/>
         <MemberCard name='Diego Alejandro Cardona' position='Backend Developer'/>
         <MemberCard name='Jhon Alexis Alfaro Puerta' position='Backend Developer'/>
         <MemberCard name='Juan David Yara Cruz' position='Backend Developer'/>

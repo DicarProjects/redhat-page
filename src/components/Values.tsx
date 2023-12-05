@@ -23,42 +23,42 @@ export const Values = () => {
                     <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Our values')}</p>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center gap-10">
-                    <ValueItem 
-                        iconTitle={t('Innovation')} 
+                <div className="flex flex-col md:flex-row items-center gap-5">
+                    <ValueItem
+                        iconTitle={t('Innovation')}
                         iconPara={t('Involves the ability to think creatively and generate unique solutions for existing challenges.')}
                     >
-                        <i className="fa-solid fa-gear"></i>
+                        <i className="fa-solid fa-lightbulb"></i>
                     </ValueItem>
-                    <ValueItem 
-                        iconTitle={t('Integrity and ethics')} 
+                    <ValueItem
+                        iconTitle={t('Integrity and ethics')}
                         iconPara={t('Valuing continuous improvement involves seeking more efficient and effective ways of doing things.')}
                     >
-                        <i className="fa-solid fa-hand"></i>
+                        <i className="fa-solid fa-check-double"></i>
                     </ValueItem>
                     <ValueItem 
-                        iconTitle={t('Diversity and inclusion')} 
+                        iconTitle={t('Diversity and inclusion')}
                         iconPara={t('Promoting a diverse and inclusive work environment, recognizing the importance of respect for creativity and long-term success.')}
                     >
-                        <i className="fa-solid fa-person"></i>
+                        <i className="fa-solid fa-people-group"></i>
                     </ValueItem>
-                    <ValueItem 
-                        iconTitle={t('Flexibility and adaptability')} 
+                    <ValueItem
+                        iconTitle={t('Flexibility and adaptability')}
                         iconPara={t('The ability to quickly adapt to changes in the business environment. Flexibility and organizational agility are increasingly important.')}
                     >
-                        <i className="fa-solid fa-arrows-left-right-to-line"></i>
+                        <i className="fa-solid fa-arrows-rotate"></i>
                     </ValueItem>
-                    <ValueItem 
-                        iconTitle={t('Customer orientation')} 
+                    <ValueItem
+                        iconTitle={t('Customer orientation')}
                         iconPara={t('Placing the customer at the center of decisions and actions, key to long-term success.')}
                     >
-                        <i className="fa-solid fa-user-group"></i>
+                        <i className="fa-solid fa-users-viewfinder"></i>
                     </ValueItem>
                     <ValueItem 
-                        iconTitle={t('Colaboration and teamwork')} 
+                        iconTitle={t('Colaboration and teamwork')}
                         iconPara={t('Fostering open and effective communication. Valuing collaboration involves expressing ideas clearly, actively listening, and sharing information to keep the team informed.')}
                     >
-                        <i className="fa-solid fa-people-group"></i>
+                        <i className="fa-solid fa-people-carry-box"></i>
                     </ValueItem>
                 </div>
             </div>

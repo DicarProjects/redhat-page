@@ -9,7 +9,7 @@ export const Achievements = () => {
         <div className="w-full h-full bg-black py-20 opacity-30 absolute">
         </div>
         <div className="container mx-auto py-5 md:max-w-[700px] xl:max-w-[1200px] flex justify-center absolute bottom-0 z-50">
-            <h3 className="text-2xl md:text-5xl lg:w-4/12 text-white font-bold">{t('Redhat in numbers')}</h3>
+            <h3 className="text-2xl md:text-5xl lg:w-4/12 text-white font-bold">{t('Red Hat in numbers')}</h3>
         </div>
         <div className="container mx-auto py-5 md:max-w-[700px] xl:max-w-[1200px] flex justify-center absolute bottom-28  md:-right-32 z-50">
 
