@@ -17,7 +17,7 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
     return (
         <header className={`bg-black h-[400px] md:h-[580px] text-center relative z-30`}>
 
-            <div className="z-40 relative flex flex-col items-center justify-center container mx-auto h-[580px]">
+            <div className="z-40 relative flex flex-col items-center justify-center container mx-auto h-full lg:h-[580px]">
                 <div className="flex flex-col items md:flex-row justify-evenly">
                     <div className='flex flex-col gap-7 lg:w-8/12 md:m-7 lg:m-0 animate__animated animate__fadeInRight'>                            
                         <h2 className="text-white text-2xl lg:text-[40px] font-bold md:leading-[3rem] text-center md:text-center md:pt-12 lg:pt-6 capitalize">{t(`${title}`)}</h2>
