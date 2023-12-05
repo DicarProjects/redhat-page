@@ -1,7 +1,4 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Navbar } from './Navbar';
-import useScreenSize from '../hooks/useScreenSize';
 import bg from '../assets/img/bg.jpg';
 
 interface headerProps { 
