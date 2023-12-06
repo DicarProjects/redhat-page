@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Title } from "./Title";
-import { Card } from "./Card";
 import mobile from '../assets/img/mobile.jpg';
 import web from '../assets/img/dev.jpg';
 import custom from '../assets/img/custom.jpg';
@@ -18,7 +17,7 @@ export const ServicesContainer = () => {
 
                 <Title text='Check our services' center={true} />
 
-                <div className="flex flex-col md:grid md:grid-cols-3 gap-5">
+                <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-5">
                     <div className="bg-white flex flex-col drop-shadow-md rounded transition-transform transform hover:-translate-y-2 cursor-pointer">
                         <div className="relative">
                             <img className="cursor-pointer" alt="Service Image" src={mobile} />

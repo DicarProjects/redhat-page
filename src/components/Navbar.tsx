@@ -98,7 +98,7 @@ export const Navbar = () => {
                 </button>
                 <div className="pt-10 flex flex-col text-left">
                     {<Link to="/" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 font-serif">{t('Home')}</Link>}
-                    {isHome ? <a className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 font-serif" href="#about">{t('About us')}</a> : <Link to="/" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 ">{t('About us')}</Link>}
+                    {<Link to="/aboutus" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 ">{t('About us')}</Link>}
                     <Link to="/services" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 font-serif">{t('Services')}</Link>
                     <Link to="/capabilities" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 font-serif">{t('Capabilities')}</Link>
                     {/* {isHome ? <a className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 " href="#customers">{t('Customers')}</a> : <Link to="/" className="text-gray-500 hover:text-gray-600 cursor-pointer p-3 hover:bg-gray-300 ">{t('Customers')}</Link>} */}
