@@ -18,11 +18,11 @@ export const Experience = () => {
 
                 <Title text="Experience" center={true}/>
 
-                <p 
+                <p
                     data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="800" 
-                    className="text-center text-gray-900 my-10 md:text-lg w-7/12 mx-auto font-serif"
+                    data-aos-duration="800"
+                    className="text-center text-gray-900 my-4 md:text-lg w-7/12 mx-auto font-serif"
                 >{t('Our expertise')}</p>
 
                 <div className="flex flex-col justify-center items-center md:grid md:grid-cols-3 lg:grid-cols-4 gap-10">

@@ -25,8 +25,8 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
                             {t('Get information')}
                             <i className="fa-solid fa-arrow-right ml-2"></i>
                         </a>
-                    </div>   
-                </div> 
+                    </div>
+                </div>
             </div>
 
             <div className="bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 opacity-60 absolute top-0 bottom-0 h-full isVisibleModal && z-30">

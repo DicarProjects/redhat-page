@@ -57,7 +57,6 @@ export const Services = () => {
                     <ServiceItem title='Technology consulting' textService='Optimize your business operations with our expert technology consulting.'>
                         <img alt="Service Image" src={consulting} />
                     </ServiceItem>
-                    
                 </div>
 
             </div>
