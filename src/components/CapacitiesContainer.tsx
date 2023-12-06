@@ -52,7 +52,7 @@ export const CapacitiesContainer = () => {
                             <img className="cursor-pointer w-2/12" alt="Capacity Image" src={kubernets} />
                         </div>
                     </Card>
-                    <Card height={'300'} titleCard={t('Cloud solutions')} textCard={t('Implementation of application servers, domain Capacitys, database/file/storage solutions, IaaS, backup and recovery. Resource monitoring, information security strategies, ITSM integration, IaaC.')}> 
+                    <Card height={'300'} titleCard={t('Cloud solutions')} textCard={t('Implementation of application servers, domain services, database/file/storage solutions, IaaS, backup and recovery. Resource monitoring, information security strategies, ITSM integration, IaaC.')}>
                         <div className="flex flex-wrap justify-center gap-5 w-full">
                             <img className="cursor-pointer w-2/12" alt="Capacity Image" src={aws} />
                             <img className="cursor-pointer w-2/12" alt="Capacity Image" src={azure} />

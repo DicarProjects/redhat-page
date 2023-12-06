@@ -20,37 +20,37 @@ export const Values = () => {
                 <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 justify-center items-center gap-5 pt-20">
                     <ValueItem
                         iconTitle={t('Innovation')}
-                        iconPara={t('Involves the ability to think creatively and generate unique solutions for existing challenges.')}
+                        iconPara={t('Think creatively and generate unique solutions for existing challenges.')}
                     >
                         <i className="fa-solid fa-lightbulb"></i>
                     </ValueItem>
                     <ValueItem
                         iconTitle={t('Integrity and ethics')}
-                        iconPara={t('Valuing continuous improvement involves seeking more efficient and effective ways of doing things.')}
+                        iconPara={t('Value continuous improvement and seek more efficient and effective ways.')}
                     >
                         <i className="fa-solid fa-check-double"></i>
                     </ValueItem>
                     <ValueItem 
                         iconTitle={t('Diversity and inclusion')}
-                        iconPara={t('Promoting a diverse and inclusive work environment, recognizing the importance of respect for creativity and long-term success.')}
+                        iconPara={t('Promote a respectful and diverse environment to drive ongoing success.')}
                     >
                         <i className="fa-solid fa-people-group"></i>
                     </ValueItem>
                     <ValueItem
                         iconTitle={t('Flexibility and adaptability')}
-                        iconPara={t('The ability to quickly adapt to changes in the business environment. Flexibility and organizational agility are increasingly important.')}
+                        iconPara={t('Quickly adapt to business changes with agility.')}
                     >
                         <i className="fa-solid fa-arrows-rotate"></i>
                     </ValueItem>
                     <ValueItem
                         iconTitle={t('Customer orientation')}
-                        iconPara={t('Placing the customer at the center of decisions and actions, key to long-term success.')}
+                        iconPara={t('Place the customer at the center of decisions and actions, crucial for sustainable success.')}
                     >
                         <i className="fa-solid fa-users-viewfinder"></i>
                     </ValueItem>
                     <ValueItem 
-                        iconTitle={t('Colaboration and teamwork')}
-                        iconPara={t('Fostering open and effective communication. Valuing collaboration involves expressing ideas clearly, actively listening, and sharing information to keep the team informed.')}
+                        iconTitle={t('Effective Collaboration')}
+                        iconPara={t('Cultivate a diverse environment to enhance success through clear communication and sustainable teamwork.')}
                     >
                         <i className="fa-solid fa-people-carry-box"></i>
                     </ValueItem>

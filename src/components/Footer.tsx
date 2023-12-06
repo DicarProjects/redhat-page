@@ -47,7 +47,7 @@ export const Footer = () => {
                         <div className="text-white">
                             <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-1 row-end-2 text-left">
                                 <i className="fa-solid fa-phone text-white text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12 w-full" font-serif>+57 3122538120</p>
+                                <p className="text-xs col-start-6 col-end-12 w-full" font-serif>(+57) 3122538120</p>
                             </div>
                             <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-2 row-end-3 text-left">
                                 <i className="fa-solid fa-envelope text-white text-lg"></i>
@@ -55,7 +55,7 @@ export const Footer = () => {
                             </div>
                             <div className="flex items-center justify-between gap-5 col-start-8 col-end-10 row-start-3 row-end-4 text-left">
                                 <i className="fa-solid fa-location-dot text-white text-lg"></i>
-                                <p className="text-xs col-start-6 col-end-12 w-full font-serif">Calle 154 # 21 Sur Ibagué, Tolima</p>
+                                <p className="text-xs col-start-6 col-end-12 w-full font-serif">{t('154th Street #21 South 22 Ibagué-Tolima')}</p>
                             </div>
                         </div>
                     </div>
@@ -67,14 +67,28 @@ export const Footer = () => {
             <div className="z-50 relative text-center text-lg p-5 flex flex-col md:flex-row justify-around items-center gap-2">
                 <p className="text-white text-sm font-serif">&copy; Red Hat It Solutions {date}. {t('All rights reserved')}</p>
                 <div className="flex gap-7">
-                    <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
-                        <p className="text-xs font-serif"><a href="https://www.facebook.com/redhat" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook-f text-white text-lg"></i></a></p>
+                <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-1 row-end-2 text-center">
+                    <p className="text-xs font-serif">
+                        <a href="#" target="_blank" rel="noreferrer" onClick={(e) => e.preventDefault()}>
+                        <i className="fa-brands fa-facebook-f text-white text-lg"></i>
+                        </a>
+                    </p>
                     </div>
+
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-2 row-end-3 text-center">
-                        <p className="text-xs font-serif"><a href="https://api.whatsapp.com/send?phone=573122538120" target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp text-white text-lg"></i></a></p>
+                    <p className="text-xs font-serif">
+                        <a href="#" target="_blank" rel="noreferrer" onClick={(e) => e.preventDefault()}>
+                        <i className="fa-brands fa-whatsapp text-white text-lg"></i>
+                        </a>
+                    </p>
                     </div>
+
                     <div className="flex items-center justify-evenly gap-5 col-start-11 col-end-13 row-start-3 row-end-4 text-center">
-                        <p className="text-xs font-serif"><a href="https://www.instagram.com/redhat/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram text-white text-lg"></i></a></p>
+                    <p className="text-xs font-serif">
+                        <a href="#" target="_blank" rel="noreferrer" onClick={(e) => e.preventDefault()}>
+                        <i className="fa-brands fa-instagram text-white text-lg"></i>
+                        </a>
+                    </p>
                     </div>
                 </div>
             </div>

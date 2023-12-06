@@ -14,19 +14,19 @@ export const Achievements = () => {
         <div className="container mx-auto py-5 md:max-w-[700px] xl:max-w-[1200px] flex justify-center absolute bottom-28  md:-right-32 z-50">
             <div className="flex flex-col gap-5 text-white">
                 <div>
-                    <p className="font-bold text-2xl">10 {t('years')}</p>
-                    <p className="capitalize text-md text-[16px] font-serif">{t('programmers experience')}</p>
+                    <p className="font-bold text-2xl">10 {t('Years')}</p>
+                    <p className="capitalize text-md text-[16px] font-serif">{t('Programmers experience')}</p>
                 </div>
                 <div>
-                    <p className="font-bold text-2xl">6 {t('projects')}</p>
-                    <p className="capitalize text-md text-[16px] font-serif">{t('completed worldwide')}</p>
+                    <p className="font-bold text-2xl">6 {t('Projects')}</p>
+                    <p className="capitalize text-md text-[16px] font-serif">{t('Completed worldwide')}</p>
                 </div>
                 <div>
-                    <p className="font-bold text-2xl">4 {t('countries')}</p>
-                    <p className="capitalize text-md text-[16px] font-serif">{t('active operations')}</p>
+                    <p className="font-bold text-2xl">4 {t('Countries')}</p>
+                    <p className="capitalize text-md text-[16px] font-serif">{t('Active operations')}</p>
                 </div>
             </div>
-        </div>    
+        </div>
         </section>
     )
 }
