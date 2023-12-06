@@ -11,7 +11,7 @@ export const Team = () => {
   AOS.init();
 
   return (
-    <section className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-20 md:my-32">
+    <section className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-10 md:my-32">
 
       <Title text="Our team" center={true}/> 
 

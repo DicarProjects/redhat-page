@@ -7,7 +7,7 @@ export const Maintext = ({text}) => {
     const { t } = useTranslation();
 
     return (
-        <section id="maintext" className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-16 p-5 md:p-0 md:my-20">
+        <section id="maintext" className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-10 p-5 md:p-0 md:my-20">
             <div className="flex flex-col md:flex-row gap-5">
                 <div className="flex flex-col">
                     <Title text="About us" center={false}/>

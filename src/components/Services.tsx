@@ -17,7 +17,7 @@ export const Services = () => {
     AOS.init();
 
     return (
-        <section className="bg-gray-200 py-20">
+        <section className="bg-gray-200 py-10 md:py-20">
 
             <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px]">
 

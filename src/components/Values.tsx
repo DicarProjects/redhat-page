@@ -12,7 +12,7 @@ export const Values = () => {
 
     return (
 
-        <section className="bg-gray-200 py-20">
+        <section className="bg-gray-200 py-10 md:py-20 px-5">
 
             <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-10">
                 <Title text="Our values" center={true}/> 

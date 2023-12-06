@@ -5,7 +5,7 @@ export const Objectives = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="aboutus" className="flex flex-col md:flex-row gap-5 container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-16 p-5 md:p-0">
+        <section id="aboutus" className="flex flex-col md:flex-row gap-5 container mx-auto md:max-w-[700px] xl:max-w-[1200px] mb-10 p-5 md:p-0">
             <div className="flex-1">
                 <Title text="Mission" center={false} />
                 <p className="text-md md:text-[16px] font-serif">
