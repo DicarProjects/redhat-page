@@ -84,8 +84,9 @@ export const Navbar = () => {
                 </div>
 
             ) : (
-                <div className="flex flex-grow items-center basis-0 h-20 container mx-auto justify-center md:justify-start cursor-pointer" onClick={() => setIsActiveMenu(!isActiveMenu)}>
+                <div className="flex flex-grow flex-row-reverse items-center basis-0 h-20 container mx-auto justify-between p-5 md:justify-start cursor-pointer" onClick={() => setIsActiveMenu(!isActiveMenu)}>
                   <img className="w-20 mr-5" src={logo} alt="Redhat Logo" loading="lazy" />
+                  <i className="fa-solid fa-bars text-2xl"></i>
                 </div>
             )} 
 

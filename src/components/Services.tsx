@@ -32,7 +32,7 @@ export const Services = () => {
                     {t('Agile development of digital solutions')}
                 </p>
             
-                <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-5 md:gap-3 lg:gap-7">
+                <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 flex-wrap justify-center items-center gap-5 md:gap-3 lg:gap-7">
 
                     <ServiceItem title='Mobile app development' textService='Boost your digital presence with our custom mobile apps for iOS and Android, designed for maximum usability and performance.'>
                         <img alt="Service Image" src={mobile} />

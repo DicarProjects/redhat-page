@@ -14,7 +14,7 @@ export const AboutUs = () => {
             </div>
 
             <div>
-                <img className="w-[1000px] lg:w-[1400px] h-[450px] rounded-lg object-cover object-center cursor-pointer" src={about} alt="Hero Image" loading="lazy"/>
+                <img className="w-[1000px] lg:w-[1400px] h-[450px] max-[450px] rounded-lg object-cover object-center cursor-pointer" src={about} alt="Hero Image" loading="lazy"/>
             </div>
         </section>
     )

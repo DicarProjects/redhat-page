@@ -25,7 +25,7 @@ export const Experience = () => {
                     className="text-center text-gray-900 my-4 md:text-lg w-7/12 mx-auto font-serif"
                 >{t('Our expertise')}</p>
 
-                <div className="flex flex-col justify-center items-center md:grid md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div className="flex flex-col justify-center items-center md:grid md:grid-cols-3 xl:grid-cols-4 gap-10">
                     <ExperienceItem title="Tech Mastery" textExperience="We master cutting-edge technologies to bring your ideas to life.">
                         <i className="fa-regular fa-file-lines text-red-600 text-5xl absolute top-2 left-9"></i>
                     </ExperienceItem>
