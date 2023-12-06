@@ -21,12 +21,11 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
                         {subtitle && (
                             <p className="text-white text-sm md:text-lg text-center md:text-center">{t(`${subtitle}`)}</p>
                         )}
-                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-3 w-6/12 mx-auto block md:mt-8 md:w-5/12" href="#about">
-                            {t('Get information')}
-                            <i className="fa-solid fa-arrow-right ml-2"></i>
+                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-2 md:p-3 text-sm md:text-base w-4/12 md:w-2/12 mx-auto block md:mt-8" href="#about">
+                        {t('Contact Us')}
                         </a>
-                    </div>   
-                </div> 
+                    </div>
+                </div>
             </div>
 
             <div className="bg-gradient-to-r from-gray-950 via-gray-950 to-gray-950 opacity-60 absolute top-0 bottom-0 h-full isVisibleModal && z-30">
