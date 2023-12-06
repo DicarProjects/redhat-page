@@ -20,10 +20,10 @@ export const Values = () => {
                     data-aos-duration="700" 
                     className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2 mb-10"
                 >
-                    <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Our values')}</p>
+                    <p className="text-black text-2xl md:text-3xl font-bold text-center font-serif">{t('Our values')}</p>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center gap-5">
+                <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 justify-center items-center gap-5">
                     <ValueItem
                         iconTitle={t('Innovation')}
                         iconPara={t('Involves the ability to think creatively and generate unique solutions for existing challenges.')}

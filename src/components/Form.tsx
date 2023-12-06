@@ -67,14 +67,14 @@ export const Form = () => {
           className="flex flex-1 flex-col gap-5 md:grid md:grid-cols-12 p-5 md:p-0"
           onSubmit={login}
         >
-    <h2 className="text-2xl font-bold md:col-start-1 md:col-end-13 border-b-2 border-red-500 w-6/12 pb-2 mb-2">{t('Contact Us')}</h2>
+          <h2 className="text-2xl font-bold md:col-start-1 md:col-end-13 border-b-2 border-red-500 w-6/12 pb-2 mb-2">{t('Contact Us')}</h2>
             <input
                 id="name"
                 name="name"
                 type="text"
                 value={name}
                 onChange={handleInputChange}
-                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500"
+                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
                 placeholder={t('Name')}
             />
 
@@ -84,7 +84,7 @@ export const Form = () => {
                 type="email"
                 value={email}
                 onChange={handleInputChange}
-                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500"
+                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
                 placeholder={t('Email')}
             />
 
@@ -94,7 +94,7 @@ export const Form = () => {
                 type="text"
                 value={subject}
                 onChange={handleInputChange}
-                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500"
+                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
                 placeholder={t('Subject')}
             />
 
@@ -103,14 +103,14 @@ export const Form = () => {
                 name="comment"
                 value={comment}
                 onChange={handleInputChange}
-                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 md:h-24 resize-none placeholder-gray-500"
+                className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 md:h-24 resize-none placeholder-gray-500 font-serif"
                 placeholder={t('Description')}
             >
             </textarea>
 
             <button
                 type="submit"
-                className="bg-red-500 hover:bg-red-600 rounded p-2 text-white md:col-start-1 md:col-end-13 placeholder-gray-500"
+                className="bg-red-500 hover:bg-red-600 rounded p-2 text-white md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
             >
                 {t('Send')}
             </button>

@@ -14,7 +14,7 @@ export const Maintext = ({text}) => {
             >
                 <p className="text-black text-2xl md:text-3xl font-bold text-left">{t('About us')}</p>
             </div>
-            <p className="text-md md:text-[16px]">{t(`${text}`)}</p>
+            <p className="text-md md:text-[16px] font-serif">{t(`${text}`)}</p>
         </section>
     )
 }

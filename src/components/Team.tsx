@@ -20,7 +20,7 @@ export const Team = () => {
         data-aos-duration="700" 
         className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2 mb-10"
       >
-          <p className="text-black text-2xl md:text-3xl font-bold text-center">{t('Our team')}</p>
+          <p className="text-black text-2xl md:text-3xl font-bold text-center font-serif">{t('Our team')}</p>
       </div>
 
       <div className="flex flex-col md:grid md:grid-cols-3 gap-5 justify-center items-center">

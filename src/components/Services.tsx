@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { ServiceItem } from './ServiceItem';
+import { Title } from './Title';
 import AOS from 'aos';
 import mobile from '../assets/img/mobile.jpg';
 import web from '../assets/img/dev.jpg';
@@ -7,8 +9,6 @@ import integration from '../assets/img/integration.jpg';
 import ecommerce from '../assets/img/ecommerce.jpg';
 import consulting from '../assets/img/consulting.jpg';
 import 'aos/dist/aos.css';
-import { Link } from 'react-router-dom';
-import { ServiceItem } from './ServiceItem';
 
 export const Services = () => {
 
@@ -21,21 +21,16 @@ export const Services = () => {
 
             <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px]">
 
-                <div 
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="700" 
-                    className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2"
-                >
-                    <p className="text-black text-2xl md:text-3xl font-mono font-bold text-center">{t('Check our services')}</p>
-                </div>
+                <Title text='Check our services' center={true} />
 
                 <p 
                     data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="800" 
                     className="text-center text-gray-900 my-10 md:text-lg w-7/12 mx-auto font-serif"
-                >{t('Agile development of digital solutions')}</p>
+                >
+                    {t('Agile development of digital solutions')}
+                </p>
             
                 <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-5 md:gap-3 lg:gap-7">
 

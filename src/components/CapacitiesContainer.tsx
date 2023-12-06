@@ -81,9 +81,9 @@ export const CapacitiesContainer = () => {
                     </Card>
                     <Card height={'300'} titleCard={t('Agile frameworks implementation')} textCard={t('Extensive experience in executing agile initiatives under different frameworks, facilitating efficient and high-productivity workflows.')}> 
                         <div className="flex flex-wrap -mt-10 gap-5">
-                            <p className="cursor-pointer text-xl w-2/12">Scrum</p>
-                            <p className="cursor-pointer text-xl w-2/12">Kanban</p>
-                            <p className="cursor-pointer text-xl w-2/12">Agile</p>
+                            <p className="cursor-pointer text-xl w-2/12 font-serif">Scrum</p>
+                            <p className="cursor-pointer text-xl w-2/12 font-serif">Kanban</p>
+                            <p className="cursor-pointer text-xl w-2/12 font-serif">Agile</p>
                         </div>
                     </Card>
                 </div>

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import useScreenSize from "../hooks/useScreenSize";
 import { ExperienceItem } from "./ExperienceItem";
+import { Title } from "./Title";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "swiper/css";
@@ -9,8 +9,6 @@ export const Experience = () => {
 
     const { t } = useTranslation();
 
-    const { width } = useScreenSize();
-
     AOS.init();
 
     return (
@@ -18,14 +16,7 @@ export const Experience = () => {
 
             <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px]">
 
-                <div 
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="700" 
-                    className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2"
-                >
-                    <p className="text-black text-2xl md:text-3xl font-bold text-center font-mono">{t('Experience')}</p>
-                </div>
+                <Title text="Experience" center={true}/>
 
                 <p 
                     data-aos="fade-down"

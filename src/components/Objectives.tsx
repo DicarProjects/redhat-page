@@ -14,7 +14,7 @@ export const Objectives = () => {
                 >
                     <h2 className="border-b-2 border-red-500 w-6/12 md:w-3/12 pb-2 mb-2 font-bold text-xl md:text-3xl text-left">{t('Mission')}</h2>
                 </div>
-                <p className="text-md md:text-[16px]">
+                <p className="text-md md:text-[16px] font-serif">
                     {t('To provide innovative and personalized technological solutions that meet the specific needs of businesses, with the aim of enhancing their competitiveness and productivity.')}
                 </p>
             </div>
@@ -28,7 +28,7 @@ export const Objectives = () => {
                     <h2 className="border-b-2 border-red-500 w-6/12 md:w-3/12 pb-2 mb-2 font-bold text-xl md:text-3xl text-left">{t('Vision')}</h2>
                 </div>
 
-                <p className="text-md md:text-[16px]">
+                <p className="text-md md:text-[16px] font-serif">
                     {t('To be leaders in software development by consistently offering cutting-edge technologies and customized solutions, driving the digital transformation of companies. Establish ourselves as strategic partners to enhance their competitiveness and productivity in an ever-evolving world.')}
                 </p>
             </div>

@@ -21,7 +21,7 @@ export const ExperienceItem = ({title, textExperience, children}:Props) => {
                 {children}
             </div>
             <h4 className="text-left font-bold -mb-5 text-sm">{t(`${title}`)}</h4>
-            <p className="text-sm mb-5 text-left">{t(`${textExperience}`)}</p>
+            <p className="text-sm mb-5 text-left text-[16px] font-serif">{t(`${textExperience}`)}</p>
         </div>
     )
 }

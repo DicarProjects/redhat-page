@@ -6,10 +6,16 @@ interface MembersProps {
 
 export const MemberCard = ({ name, position, imageSrc }: MembersProps) => {
   return (
-    <div className='w-10/12 mx-auto'>
-      <img src={imageSrc} alt="Profile image" className='object-cover h-52 w-full rounded-md hover:cursor-pointer' />
-      <p className="text-xl mt-2">{name}</p>
-      <p className='text-md text-gray-700'>{position}</p>
+    <div className='w-10/12 h-[400px] mx-auto'>
+      <div className="relative overflow-hidden rounded-md">
+        <img 
+        src={imageSrc} 
+        alt="Profile image" 
+        className='object-cover w-full rounded-md hover:cursor-pointer transition-transform transform hover:scale-110' 
+        />
+      </div>
+      <p className="text-xl mt-2 font-sans">{name}</p>
+      <p className='text-md text-gray-700 font-thin font-serif'>{position}</p>
     </div>
   );
 };
