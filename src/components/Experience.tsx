@@ -18,7 +18,7 @@ export const Experience = () => {
 
             <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px]">
 
-                <div 
+                <div
                     data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="700" 
@@ -27,11 +27,11 @@ export const Experience = () => {
                     <p className="text-black text-2xl md:text-3xl font-bold text-center font-mono">{t('Experience')}</p>
                 </div>
 
-                <p 
+                <p
                     data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="800" 
-                    className="text-center text-gray-900 my-10 md:text-lg w-7/12 mx-auto font-serif"
+                    data-aos-duration="800"
+                    className="text-center text-gray-900 my-4 md:text-lg w-7/12 mx-auto font-serif"
                 >{t('Our expertise')}</p>
 
                 <div className="flex flex-col justify-center items-center md:grid md:grid-cols-4 gap-10">
