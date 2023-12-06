@@ -35,16 +35,16 @@ export const Navbar = () => {
             { width > 768 ? (
                 <div className='z-50 relative flex flex-col md:flex-row justify-center items-center align container mx-auto py-5 md:max-w-[700px] xl:max-w-[1200px]'>
                     <Link to="/" className="flex flex-grow items-center basis-0 container mx-auto justify-center md:justify-start cursor-pointer">
-                      <img className="w-32 mr-5" src={logo} alt="Redhat logo" loading="lazy" />
+                      <img className="w-32 mr-5" src={logo} alt="Red Hat logo" loading="lazy" />
                     </Link>
 
                     <nav className="hidden md:block">
                       <ul className={`flex flex-col md:flex-row text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 font-bold lg:text-lg`}>
+                        <li><Link to='/home'>{t('Home')}</Link></li>
                         <li><Link to='/aboutus'>{t('About us')}</Link></li>
                         <li><Link to='/services'>{t('Services')}</Link></li>
                         <li><Link to='/capabilities'>{t('Capabilities')}</Link></li>
-                        {/* {isHome ? <li><a href="#customers">{t('Customers')}</a></li> :  <li><Link to='/'>{t('Customers')}</Link></li>} */}
-                        <li><Link to='/contact'>{t('Contact us')}</Link></li>
+                        <li><Link to='/contact'>{t('Contact')}</Link></li>
                       </ul>
                     </nav>
 
