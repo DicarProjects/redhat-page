@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import about from '../assets/img/about1.png';
 import { Title } from './Title';
+import about from '../assets/img/about1.png';
 
 export const AboutUs = () => {
 

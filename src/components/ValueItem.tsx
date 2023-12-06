@@ -16,13 +16,13 @@ export const ValueItem = ({iconTitle, iconPara, children}: ValueProps) => {
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="800" 
-            className='flex flex-col justify-between items-center w-[200px] h-[250px] w-full'
+            className='flex flex-col justify-between items-center md:text-[18px]  h-[250px] w-full'
         >
             <div className="text-3xl text-center">
                 {children}
             </div>
             <p className="py-5 text-center font-bold text-md h-92 font-serif">{iconTitle}</p>
-            <p className="h-full font-serif">{iconPara}</p>
+            <p className="h-full font-serif md:text-[16px] ">{iconPara}</p>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ValueItem } from "./ValueItem";
+import { Title } from "./Title";
 
 export const Values = () => {
 
@@ -13,17 +14,10 @@ export const Values = () => {
 
         <section className="bg-gray-200 py-20">
 
-            <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-20">
-                <div 
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="700" 
-                    className="border-b-2 border-red-500 w-6/12 mx-auto md:w-3/12 pb-2 mb-10"
-                >
-                    <p className="text-black text-2xl md:text-3xl font-bold text-center font-serif">{t('Our values')}</p>
-                </div>
+            <div className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-10">
+                <Title text="Our values" center={true}/> 
 
-                <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 justify-center items-center gap-5">
+                <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 justify-center items-center gap-5 pt-20">
                     <ValueItem
                         iconTitle={t('Innovation')}
                         iconPara={t('Involves the ability to think creatively and generate unique solutions for existing challenges.')}

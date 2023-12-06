@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { Title } from "./Title";
+import aboutImage from '../assets/img/aboutus.jpg';
 
 export const Maintext = ({text}) => {
 
@@ -6,15 +8,15 @@ export const Maintext = ({text}) => {
 
     return (
         <section id="maintext" className="container mx-auto md:max-w-[700px] xl:max-w-[1200px] my-16 p-5 md:p-0 md:my-20">
-            <div 
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="700" 
-                className="border-b-2 border-red-500 w-6/12 md:w-3/12 pb-2 mb-10"
-            >
-                <p className="text-black text-2xl md:text-3xl font-bold text-left">{t('About us')}</p>
+            <div className="flex flex-col md:flex-row gap-5">
+                <div className="flex flex-col">
+                    <Title text="About us" center={false}/>
+                    <p className="text-md md:text-[16px] font-serif">{t(`${text}`)}</p>
+                </div>
+                <div className="flex flex-col md:flex-row gap-5 items-center justify-center relative overflow-hidden">
+                    <img className="flex-1 md:w-6/12 cursor-pointer transition-transform transform hover:scale-110" src={aboutImage} alt="About Image" />
+                </div>
             </div>
-            <p className="text-md md:text-[16px] font-serif">{t(`${text}`)}</p>
         </section>
     )
 }
