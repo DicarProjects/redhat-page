@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import bg from '../assets/img/bg.jpg';
+import { Link } from 'react-router-dom';
 
 interface headerProps { 
     title: string,
@@ -16,15 +17,14 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
 
             <div className="z-40 relative flex flex-col items-center justify-center container mx-auto h-full lg:h-[580px]">
                 <div className="flex flex-col items md:flex-row justify-evenly">
-                    <div className='flex flex-col gap-7 lg:w-8/12 md:m-7 lg:m-0 animate__animated animate__fadeInRight'>                            
+                    <div className='flex flex-col gap-7 lg:w-8/12 md:m-7 lg:m-0 animate__animated animate__fadeInRight'>
                         <h2 className="text-white text-2xl lg:text-[40px] font-bold md:leading-[3rem] text-center md:text-center md:pt-12 lg:pt-6 capitalize">{t(`${title}`)}</h2>
                         {subtitle && (
                             <p className="text-white text-sm md:text-lg text-center md:text-center font-serif p-5 md:p-0">{t(`${subtitle}`)}</p>
                         )}
-                        <a className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-3 w-6/12 mx-auto block md:mt-8 md:w-5/12 font-serif" href="#about">
-                            {t('Get information')}
-                            <i className="fa-solid fa-arrow-right ml-2"></i>
-                        </a>
+                        <Link to="/contact" className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-3 w-6/12 mx-auto block md:mt-8 md:w-5/12 font-serif">
+                        {t('Contact Us')}
+                        </Link>
                     </div>
                 </div>
             </div>
