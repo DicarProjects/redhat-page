@@ -21,23 +21,32 @@ export const Footer = () => {
 
                     <div className="text-white">
                         <h2 className="font-bold mb-5 col-start-5 col-end-7 text-lg font-serif">{t('Menu')}</h2>
-
                         <div>
-                            <div className="col-start-5 col-end-7 flex items-center">
-                                <a className="text-center text-sm pb-2 font-serif" href="#about">{t('Home')}</a>
-                            </div>
-                            <div className="col-start-5 col-end-7 flex items-center">
-                                <a className="text-center text-sm pb-2 font-serif" href="#about">{t('About us')}</a>
-                            </div>
-                            <div className="col-start-5 col-end-7 flex items-center">
-                                <Link className="text-center text-sm pb-2 font-serif" to='/services'>{t('Services')}</Link>
-                            </div>
-                            <div className="col-start-5 col-end-7 flex items-center">
-                                <Link className="text-center text-sm pb-2 font-serif" to='/capabilities'>{t('Capabilities')}</Link>
-                            </div>
-                            <div className="col-start-5 col-end-7 flex items-center">
-                                <Link className="text-center text-sm pb-2 font-serif" to='/contact'>{t('Contact')}</Link>
-                            </div>
+                        <div className="col-start-5 col-end-7 flex items-center">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/Home">
+                            {t('Home')}
+                        </Link>
+                        </div>
+                        <div className="col-start-5 col-end-7 flex items-center">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/aboutus">
+                            {t('About us')}
+                        </Link>
+                        </div>
+                        <div className="col-start-5 col-end-7 flex items-center">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/services">
+                            {t('Services')}
+                        </Link>
+                        </div>
+                        <div className="col-start-5 col-end-7 flex items-center">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/capabilities">
+                            {t('Capabilities')}
+                        </Link>
+                        </div>
+                        <div className="col-start-5 col-end-7 flex items-center">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/contact">
+                            {t('Contact')}
+                        </Link>
+                        </div>
                         </div>
                     </div>
 
