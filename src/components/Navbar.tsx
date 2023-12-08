@@ -31,7 +31,7 @@ export const Navbar = () => {
     }, [window.location.href]);
 
     return (
-        <>
+        <div className="sticky top-0 bg-white z-50">
             { width > 768 ? (
                 <div className='z-50 relative flex flex-col md:flex-row justify-center items-center align container mx-auto py-5 md:max-w-[700px] xl:max-w-[1200px]'>
                     <Link to="/" className="flex flex-grow items-center basis-0 container mx-auto justify-center md:justify-start cursor-pointer">
@@ -112,6 +112,6 @@ export const Navbar = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
