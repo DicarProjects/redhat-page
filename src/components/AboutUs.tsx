@@ -10,9 +10,14 @@ export const AboutUs = () => {
         <section id="about" className="flex flex-col md:flex-row-reverse gap-10 container mx-auto p-5 md:p-0 md:max-w-[700px] xl:max-w-[1200px] pt-10 md:py-20">
             <div className="flex flex-col md:pt-10">
                 <Title text="About us" center={false}/>
-                <p className="text-md text-[16px] font-serif">{t('Red Hat IT Solutions is your technological partner for success. As a software development company, we specialize in providing innovative and customized solutions that drive the growth of our clients. With a highly trained and committed team, we are ready to tackle any challenge and help you achieve your professionals goals.')}</p>
+                <div className="text-sm md:text-base lg:text-sm xl:text-base 2xl:text-lg font-serif">
+                <p>{t('Red Hat IT Solutions is your technological partner for success. As a software development company, we specialize in providing innovative and customized solutions that drive the growth of our clients.')}</p>
+                <br />
+                <p>{t('With a highly trained and committed team, we are ready to tackle any challenge and help you achieve your professional goals. Our expertise includes but is not limited to web development, mobile app development, and cloud solutions.')}</p>
+                <br />
+                <p>{t('Our expertise includes but is not limited to web development, mobile app development, and cloud solutions.')}</p>
+                </div>
             </div>
-
             <div>
                 <img className="w-[1000px] lg:w-[1400px] h-[450px] max-[450px] rounded-lg object-cover object-center cursor-pointer" src={about} alt="Hero Image" loading="lazy"/>
             </div>
