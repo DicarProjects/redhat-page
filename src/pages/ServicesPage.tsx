@@ -7,7 +7,7 @@ export const ServicesPage = () => {
   return (
     <>
       <Navbar/>   
-      <Header title="Services" subtitle="We are leaders in innovation, committed to quality and constant excellence." heightBanner="400"/>
+      <Header title="Services" subtitle="We turn ideas into advanced technological solutions." heightBanner="400"/>
       <ServicesContainer/>
       <Footer/>
     </>

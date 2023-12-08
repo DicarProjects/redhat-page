@@ -6,8 +6,8 @@ import { Navbar } from "../components/Navbar";
 export const CapacitiesPage = () => {
   return (
     <>
-      <Navbar/>  
-      <Header title="Capabilities" subtitle="We are leaders in innovation, committed to quality and constant excellence." heightBanner="400"/>
+      <Navbar/>
+      <Header title="Capabilities" subtitle="Masterfully crafting solutions at the forefront of technology." heightBanner="400"/>
       <CapacitiesContainer/>
       <Footer/>
     </>

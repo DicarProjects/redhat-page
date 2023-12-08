@@ -8,7 +8,7 @@ export const ContactPage = () => {
   return (
     <>
       <Navbar/>   
-      <Header title="Contact us" subtitle="We are leaders in innovation, committed to quality and constant excellence." heightBanner="400"/>
+      <Header title="Contact us" subtitle="Turn your projects into reality – get in touch with us today!" heightBanner="400"/>
       <Address/>
       <Form/>
       <Footer/>
