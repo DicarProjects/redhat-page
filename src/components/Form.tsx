@@ -9,6 +9,7 @@ import 'sweetalert2/src/sweetalert2.scss'
 import Contact from "../assets/img/form.jpg";
 
 export const Form = () => {
+
     const { t } = useTranslation();
     
     const initialForm = {
@@ -43,7 +44,16 @@ export const Form = () => {
     const login = async (e) => {
       e.preventDefault();
 
+      console.log('form', formValues)
+
       if (!hasProperty(formValues)) {
+        if (subject === 'Seleccione un asunto' || subject === 'Choose a subject') {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: t('Pick a option')
+          });
+        }
         try {
           const response = await axiosClient.post('api/form/create-new-form', formValues);
           if (response.status === 200) {
@@ -103,8 +113,17 @@ export const Form = () => {
               className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
               placeholder={t('Email')}
             />
+            <select id="subject" name="subject" className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif" value={subject} onChange={handleInputChange}>
+              <option>{t('Pick a option')}</option>
+              <option>{t('Mobile app development')}</option>
+              <option>{t('Web app development')}</option>
+              <option>{t('Custom software development')}</option>
+              <option>{t('Systems Integration')}</option>
+              <option>{t('Ecommerce development')}</option>
+              <option>{t('Technology consulting')}</option>
+            </select>
 
-            <input
+            {/* <input
               id="subject"
               name="subject"
               type="text"
@@ -112,10 +131,10 @@ export const Form = () => {
               onChange={handleInputChange}
               className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
               placeholder={t('Subject')}
-            />
+            /> */}
 
             <textarea
-              d="comment"
+              id="comment"
               name="comment"
               value={comment}
               onChange={handleInputChange}

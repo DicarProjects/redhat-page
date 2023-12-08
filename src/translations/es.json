@@ -25,7 +25,7 @@
     "Improve efficiency and communication in your company with our expert systems integration.":"Mejora la eficiencia y la comunicación en tu empresa con nuestra experta integración de sistemas.",
     "Ecommerce development":"Desarrollo de comercios electrónicos",
     "Expand your business with our online stores and e-commerce platforms designed for digital success.":"Expande tu negocio con nuestras tiendas en línea y plataformas de comercio electrónico diseñadas para el éxito digital.",
-    "Technology Consulting":"Consultoría tecnológica",
+    "Technology consulting":"Consultoría tecnológica",
     "Optimize your business operations with our expert technology consulting.":"Optimiza tus operaciones comerciales con nuestro asesoramiento experto en tecnología.",
     "Experience":"Experiencia",
     "Our expertise":"Nuestra experiencia",
@@ -96,5 +96,6 @@
     "Email":"Correo electrónico",
     "Subject":"Asunto",
     "Description":"Descripción",
-    "Send":"Enviar"
+    "Send":"Enviar",
+    "Pick a option":"Seleccione un asunto"
 }
