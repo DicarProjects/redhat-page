@@ -40,10 +40,10 @@ export const Navbar = () => {
 
                     <nav className="hidden md:block">
                       <ul className={`flex flex-col md:flex-row text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 font-bold lg:text-lg font-serif`}>
-                        <li><Link to='/aboutus'>{t('About us')}</Link></li>
-                        <li><Link to='/services'>{t('Services')}</Link></li>
-                        <li><Link to='/capabilities'>{t('Capabilities')}</Link></li>
-                        <li><Link to='/contact'>{t('Contact')}</Link></li>
+                        <li><Link to='/aboutus#hero'>{t('About us')}</Link></li>
+                        <li><Link to='/services#hero'>{t('Services')}</Link></li>
+                        <li><Link to='/capabilities#hero'>{t('Capabilities')}</Link></li>
+                        <li><Link to='/contact#hero'>{t('Contact')}</Link></li>
                       </ul>
                     </nav>
 
