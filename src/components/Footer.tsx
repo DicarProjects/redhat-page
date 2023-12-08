@@ -43,7 +43,7 @@ export const Footer = () => {
                         </Link>
                         </div>
                         <div className="col-start-5 col-end-7 flex items-center">
-                        <Link className="text-center text-sm pb-2 font-serif" to="/contact">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/contact#form">
                             {t('Contact')}
                         </Link>
                         </div>

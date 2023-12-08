@@ -1,4 +1,5 @@
-// import { useState } from "react";
+import { useEffect, useRef } from "react";
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import axiosClient from "../api/axios";
 import { useForm } from "../hooks/useForm";
@@ -16,8 +17,21 @@ export const Form = () => {
       subject: '',
       comment: ''
     }
+
+    const targetRef = useRef(null);
+    const navigate = useNavigate();
     
+    useEffect(() => {
+      if (window.location.hash) {
+        const targetElement = document.querySelector(window.location.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [navigate]);
+
     const [formValues, handleInputChange] = useForm(initialForm);
+
 
     const { name, email, subject, comment } = formValues;
 
@@ -60,7 +74,7 @@ export const Form = () => {
     }
 
     return (
-      <div className="flex flex-col-reverse gap-10 md:flex-row container mx-auto xl:max-w-[1200px] my-10 p-5">
+      <div id="form" ref={targetRef} className="flex flex-col-reverse gap-10 md:flex-row container mx-auto xl:max-w-[1200px] my-10 p-5">
         <div className="flex-1">
           <img className="h-[600px] object-cover" src={Contact} alt="Contact Image" />
         </div>
