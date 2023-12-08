@@ -96,5 +96,6 @@
     "Subject":"Subject",
     "Description":"Description",
     "Send":"Send",
-    "Pick a option":"Choose a subject"
+    "Pick a option":"Choose a subject",
+    "Loading":"Loading"
 }

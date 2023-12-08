@@ -97,5 +97,6 @@
     "Subject":"Asunto",
     "Description":"Descripción",
     "Send":"Enviar",
-    "Pick a option":"Seleccione un asunto"
+    "Pick a option":"Seleccione un asunto",
+    "Loading":"Cargando"
 }

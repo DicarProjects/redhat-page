@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import axiosClient from "../api/axios";
@@ -21,6 +21,8 @@ export const Form = () => {
 
     const targetRef = useRef(null);
     const navigate = useNavigate();
+
+    const [loading, setLoading] = useState(false);
     
     useEffect(() => {
       if (window.location.hash) {
@@ -31,7 +33,7 @@ export const Form = () => {
       }
     }, [navigate]);
 
-    const [formValues, handleInputChange] = useForm(initialForm);
+    const [formValues, handleInputChange, reset] = useForm(initialForm);
 
 
     const { name, email, subject, comment } = formValues;
@@ -44,7 +46,7 @@ export const Form = () => {
     const login = async (e) => {
       e.preventDefault();
 
-      console.log('form', formValues)
+      setLoading(!loading);
 
       if (!hasProperty(formValues)) {
         if (subject === 'Seleccione un asunto' || subject === 'Choose a subject') {
@@ -53,6 +55,8 @@ export const Form = () => {
             title: "Oops...",
             text: t('Pick a option')
           });
+          setLoading(!loading);
+          return;
         }
         try {
           const response = await axiosClient.post('api/form/create-new-form', formValues);
@@ -62,7 +66,10 @@ export const Form = () => {
               text: "You message was sent!",
               icon: "success"
             });
+      
+            reset();
           }
+          setLoading(!loading);
         } catch (error) {
           console.log('error', error);
           Swal.fire({
@@ -78,8 +85,10 @@ export const Form = () => {
           text: 'Complete the form, please',
           icon: 'error'
         });
+        setLoading(!loading);
       }
 
+      setLoading(false);
 
     }
 
@@ -123,16 +132,6 @@ export const Form = () => {
               <option>{t('Technology consulting')}</option>
             </select>
 
-            {/* <input
-              id="subject"
-              name="subject"
-              type="text"
-              value={subject}
-              onChange={handleInputChange}
-              className="bg-gray-100 w-full p-3 rounded text-sm md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
-              placeholder={t('Subject')}
-            /> */}
-
             <textarea
               id="comment"
               name="comment"
@@ -147,7 +146,7 @@ export const Form = () => {
               type="submit"
               className="bg-red-500 hover:bg-red-600 rounded p-2 text-white md:col-start-1 md:col-end-13 placeholder-gray-500 font-serif"
             >
-              {t('Send')}
+              { loading ? t('Loading') : t('Send')}
             </button>
           </form>
         </div>
