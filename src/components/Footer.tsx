@@ -28,17 +28,17 @@ export const Footer = () => {
                         </Link>
                         </div>
                         <div className="col-start-5 col-end-7 flex items-center">
-                        <Link className="text-center text-sm pb-2 font-serif" to="/aboutus">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/aboutus#hero">
                             {t('About us')}
                         </Link>
                         </div>
                         <div className="col-start-5 col-end-7 flex items-center">
-                        <Link className="text-center text-sm pb-2 font-serif" to="/services">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/services#hero">
                             {t('Services')}
                         </Link>
                         </div>
                         <div className="col-start-5 col-end-7 flex items-center">
-                        <Link className="text-center text-sm pb-2 font-serif" to="/capabilities">
+                        <Link className="text-center text-sm pb-2 font-serif" to="/capabilities#hero">
                             {t('Capabilities')}
                         </Link>
                         </div>

@@ -1,6 +1,7 @@
+import { useEffect, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import bg from '../assets/img/bg.jpg';
-import { Link } from 'react-router-dom';
 
 interface headerProps { 
     title: string,
@@ -12,8 +13,20 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
 
     const { t } = useTranslation();
 
+    const targetRef = useRef(null);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, [navigate]);
+
     return (
-        <header className={`bg-black h-[400px] md:h-[580px] text-center relative z-30`}>
+        <header className={`bg-black h-[400px] md:h-[580px] text-center relative z-30`} id="hero" ref={targetRef}>
 
             <div className="z-40 relative flex flex-col items-center justify-center container mx-auto h-full lg:h-[580px]">
                 <div className="flex flex-col items md:flex-row justify-evenly">
