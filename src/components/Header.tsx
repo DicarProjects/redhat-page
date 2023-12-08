@@ -35,9 +35,11 @@ export const Header = ({title, subtitle, heightBanner}:headerProps) => {
                         {subtitle && (
                             <p className="text-white text-sm md:text-lg text-center md:text-center font-serif p-5 md:p-0">{t(`${subtitle}`)}</p>
                         )}
+                        {title !== "Contact us" && (
                         <Link to="/contact#form" className="bg-red-500 hover:bg-red-600 text-white rounded-lg p-3 w-6/12 mx-auto block md:mt-8 max-w-[150px] font-serif">
-                        {t('Contact Us')}
+                            {t('Contact Us')}
                         </Link>
+                        )}
                     </div>
                 </div>
             </div>
